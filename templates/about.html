@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - GreenClassify</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body style="margin:0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f9fbf9;">
+
+    <nav style="background:#1b3d2f; color:white; padding:15px 5%; display:flex; justify-content:space-between; align-items:center;">
+        <div class="logo" style="font-weight:bold; font-size:1.5rem;">GreenClassify</div>
+        <div class="nav-links">
+            <a href="/" style="color:white; text-decoration:none; margin-left:20px;">Home</a>
+            <a href="/about" style="color:#27ae60; text-decoration:none; margin-left:20px; font-weight:bold;">About Us</a>
+        </div>
+    </nav>
+
+    <div style="max-width: 900px; margin: 50px auto; padding: 20px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        
+        <header style="text-align:center; margin-bottom: 40px;">
+            <h1 style="color: #1b3d2f; font-size: 2.5rem;">Cultivating AI for Agriculture</h1>
+            <p style="color: #666; font-size: 1.1rem;">Bridging the gap between technology and the kitchen.</p>
+        </header>
+
+        <section style="line-height: 1.8; color: #444;">
+            <h2 style="color: #27ae60;">Our Mission</h2>
+            <p>
+                At <strong>GreenClassify</strong>, we believe that identifying fresh produce should be effortless. 
+                Whether you are a chef, a grocery shopper, or a student, our AI-powered platform helps you 
+                instantly recognize 15 different varieties of vegetables with high precision.
+            </p>
+
+            <h2 style="color: #27ae60; margin-top: 30px;">How It Works</h2>
+            <p>
+                Our system utilizes <strong>Deep Learning</strong> and the <strong>MobileNetV2</strong> architecture. 
+                By training on thousands of images, our model has learned to distinguish subtle differences in 
+                textures, shapes, and colors to give you an accurate prediction in seconds.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px;">
+                <div style="padding: 20px; border-left: 5px solid #27ae60; background: #f0f7f2;">
+                    <h3 style="margin-top:0;">15+ Categories</h3>
+                    <p style="font-size: 0.9rem;">From Bitter Gourd to Bell Peppers, we cover the most common kitchen staples.</p>
+                </div>
+                <div style="padding: 20px; border-left: 5px solid #27ae60; background: #f0f7f2;">
+                    <h3 style="margin-top:0;">Instant Results</h3>
+                    <p style="font-size: 0.9rem;">Powered by optimized TensorFlow models for lightning-fast classification.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer style="text-align:center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee;">
+            <a href="/" style="background:#27ae60; color:white; padding:12px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block;">Back to Scanner</a>
+        </footer>
+    </div>
+
+</body>
+</html>

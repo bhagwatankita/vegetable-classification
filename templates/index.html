@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenClassify - Smart Vegetable Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">GreenClassify</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        {% block content %}
+        <div class="hero-section" style="text-align: center; padding: 50px;">
+            <h1>Identify Your Vegetables Instantly</h1>
+            <p>Upload an image and let our AI do the rest.</p>
+            
+            <div class="upload-container" style="margin-top: 30px; background: white; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <form action="/predict" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button type="submit">Upload and Predict</button>
+                </form>
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 GreenClassify.com - Freshness & Accuracy Guaranteed</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+
+{% extends "index.html" %}
+
+{% block content %}
+<div class="prediction-container">
+    <div class="result-card">
+        <h1>Analysis Result</h1>
+        
+        {% if label %}
+            <div class="veg-badge">
+                <h2>Identified as: <span class="highlight">{{ label }}</span></h2>
+            </div>
+            <img src="{{ url_for('static', filename='uploads/' + img_path) }}" class="result-img">
+        {% else %}
+            <p>No image uploaded yet.</p>
+        {% endif %}
+
+        <div class="action-buttons">
+            <a href="/" class="btn-retry">Try Another</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
